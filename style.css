@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  h1 {
+    color: #2c3e50;
+    font-size: 24px;
+  }
+  .task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .task {
+    font-size: 18px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+  }
+  input {
+    font-size: 16px;
+    padding: 8px;
+    margin: 5px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+  }
+  button {
+    font-size: 16px;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  button:active {
+    transform: scale(0.95);
+  }
+  .result {
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .correct {
+    color: #27ae60;
+  }
+  .incorrect {
+    color: #e74c3c;
+  }
+  .progress-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+  }
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .progress {
+    height: 100%;
+    background-color: #3498db;
+    width: 0;
+    transition: width 0.3s ease;
+  }
+  .progress-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  .grade {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Адаптивные стили для мобильных устройств */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 20px;
+    }
+    .task {
+      font-size: 16px;
+      padding: 10px;
+    }
+    input {
+      font-size: 14px;
+      padding: 6px;
+    }
+    button {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+    .result {
+      font-size: 14px;
+    }
+    .grade {
+      font-size: 20px;
+    }
+  }
+  
